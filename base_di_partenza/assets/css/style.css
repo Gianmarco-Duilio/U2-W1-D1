@@ -81,6 +81,14 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
+#logoHtml {
+  border: solid 5px rgb(177, 0, 177);
+  width: min-content;
+  height: 90px;
+}
+#logoHtml img {
+  border: solid 5px rgb(91, 154, 248);
+}
 p,
 address,
 ul,
@@ -208,10 +216,12 @@ footer a {
     padding-inline: 7px;
   }
 }
+
 /*---------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 577px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   header ul {
     display: flex;
@@ -230,7 +240,9 @@ footer a {
     margin: 60px;
   }
 }
+
 /*---------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
   body {
     padding-inline: 80px;
@@ -239,7 +251,7 @@ footer a {
     padding-inline: 25px;
   }
   h1 {
-    font-size: 3.8rem;
+    font-size: 5rem;
   }
   header {
     padding-block: 0px;
@@ -271,18 +283,48 @@ footer a {
     display: inline-block;
     width: 33.333%;
     margin-inline: -2px;
+    height: 100%;
   }
   iframe {
     vertical-align: middle;
     display: inline-block;
     width: 50%;
   }
-  fieldset {
-  }
+
   section {
     border-radius: 20px;
     vertical-align: middle;
     display: inline-block;
     width: 49%;
+  }
+  input {
+    padding: 10px;
+    padding-inline: 40px;
+  }
+  button {
+    padding: 10px 20px;
+  }
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+@media print {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0px;
+  }
+  main {
+    box-shadow: none;
+  }
+
+  header,
+  section,
+  iframe,
+  aside,
+  footer {
+    display: none;
+    font-size: small;
   }
 }
